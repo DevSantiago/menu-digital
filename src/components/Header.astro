@@ -7,8 +7,10 @@ import logoiImg from '../images/logo.png'
 
 <div class="container-header">
     <nav class="nav">
-        <img src="{logoiImg.src}" alt="logo">
-        <h1>Sakura</h1>
+        <a href="/">
+            <img src={logoiImg.src} alt="logo">
+            <h1>Sakura</h1>
+        </a>
     </nav>
 </div>
 
@@ -24,11 +26,13 @@ import logoiImg from '../images/logo.png'
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
 
-    .nav {
+    .nav a {
         display: flex;
         align-items: center;
         gap: 10px;
         justify-content: center;
+        text-decoration: none;
+        color: black;
         
     }
 
